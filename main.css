@@ -1,34 +1,83 @@
 /* Element Selectors */
 body {
-    background-color: white;
-	padding: 5px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	font-family: 'Lato', arial, sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
-h1 {
-    color: black;
-	font-size: 32px;
-}
-h2 {
-	color: black;
-	font-size: : 20px;
-}
+
 
 /* Class Selectors */
-.site-header {
-	text-align: center;
-	margin: auto;
-	background-color: black;
-	padding: 5px;
+.banner {
+    position: fixed;
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    float: left;
 }
-.site-titles {
-	font-style: normal;
-	font-family: sans-serif;
-	color: grey;
+.banner .information {
+    position: absolute;
+	width: calc(100% - 50px);
+    top: 25px;
+    left: 25px;
+}
+.banner .information img {
+    float: left;
+    border-radius: 25%;
+    width: 20%;
+}
+.banner .information .about {
+    width: 80%;
+    float: right;
+}
+.banner .information .about h1 {
+    color: #fff;
+    font-size: 32px;
+	padding-left: 10px;
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+.banner .information .about p {
+    padding-left: 10px;
+	margin: 0;
+	color: #fff;
+	opacity: 0.9;
+	font-size: 18px;
+	text-align: justify-all;
+	width: calc(100% - 25px);
+	float: left;
 }
 
-.center {
-	padding: 5px;
-	width: 1000px;
-    margin: auto;
+.banner .socials {
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+.banner .socials a {
+    width: 64px;
+    height: 64px;
+}
+
+.content {
+
 }
 
 /* ID Selectors */
+
+/* Resolution Resizing */
+@media(max-width: 900px) {
+	.banner { position: relative; width: 100%; height: 250px; }
+	.content { position: relative; width: 100%; }
+}
+@media(max-width: 600px) {
+	.banner .information img { display: none; }
+	.banner .information .about  { width: 100%; }
+}
+@media(max-width: 1200px) and (min-width: 900px) {
+	.banner .information img { display: none; }
+	.banner .information .about  { width: 100%; }
+}
