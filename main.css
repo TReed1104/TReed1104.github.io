@@ -1,12 +1,34 @@
+/* Element Selectors */
 body {
-    background-color: lightblue;
+    background-color: white;
+	padding: 5px;
+}
+h1 {
+    color: black;
+	font-size: 32px;
+}
+h2 {
+	color: black;
+	font-size: : 20px;
 }
 
-h1 {
-    color: white;
-	font-size: 32px;
+/* Class Selectors */
+.site-header {
+	text-align: center;
+	margin: auto;
+	background-color: black;
+	padding: 5px;
+}
+.site-titles {
+	font-style: normal;
+	font-family: sans-serif;
+	color: grey;
 }
 
 .center {
-    text-align: center;
+	padding: 5px;
+	width: 1000px;
+    margin: auto;
 }
+
+/* ID Selectors */
