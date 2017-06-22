@@ -168,6 +168,14 @@ body {
 	transform: translate(0, -120px);
 }
 
+/* Portfolio skillset container and skills */
+.content .portfolio .region .skillset {
+
+}
+.content .portfolio .region .skillset .skill {
+
+}
+
 /* Portfolio footer */
 .content .portfolio .footer {
 	float: left;
