@@ -14,10 +14,11 @@ body {
 /* Banner (Left hand side) */
 .banner {
     position: fixed;
-    background-color: black;
+	float: left;
     width: 25%;
     height: 100%;
-    float: left;
+
+	background-color: black;
 }
 .banner .information {
     position: absolute;
@@ -31,32 +32,35 @@ body {
     width: 20%;
 }
 .banner .information .about {
+	float: right;
     width: 80%;
-    float: right;
 }
 .banner .information .about h1 {
-    color: #fff;
-    font-size: 32px;
-	padding-left: 10px;
-	margin: 0;
-	width: 100%;
 	float: left;
+	width: 100%;
+	margin: 0;
+	padding-left: 10px;
+
+	color: #fff;
+	font-size: 32px;
 }
 .banner .information .about p {
-    padding-left: 10px;
-	margin: 0;
-	color: #fff;
-	opacity: 0.9;
-	font-size: 18px;
-	text-align: justify-all;
-	width: calc(100% - 25px);
 	float: left;
+	width: calc(100% - 25px);
+	margin: 0;
+    padding-left: 10px;
+
+	font-size: 18px;
+	color: white;
+	text-align: justify-all;
+
+	opacity: 0.9;
 }
 
 .banner .socials {
-    background-color: white;
     width: auto;
     height: auto;
+	background-color: white;
 }
 .banner .socials a {
     width: 64px;
@@ -66,57 +70,100 @@ body {
 /* Portfolio content (Right hand side)*/
 .content {
 	position: relative;
+	float: right;
 	width: 75%;
 	min-height: 100%;
-	float: right;
+
 	overflow-x: hidden;
 	overflow: visible;
 }
 .content .portfolio {
 	position: absolute;
+	float: left;
 	left: 0;
 	width: 100%;
 	min-height: 100%;
-	float: left;
+
 	overflow-y: visible;
 }
-.content .portfolio .body {
-	min-height: 100%;
-}
-.content .portfolio .body .section {
+.content .portfolio .region {
+	float: left;
 	width: 100%;
 	padding: 0px 40px 60px 40px;
+
 	box-sizing: border-box;
-	float: left;
 }
-.content .portfolio .body .section h1 {
+.content .portfolio .region h1 {
 	color: black;
 }
-.content .portfolio .body .section p {
+.content .portfolio .region p {
+	float: left;
 	width: 100%;
-	color: black;
 	margin: 0px 0px 16px 0px;
-	float: left;
+
+	color: black;
 }
-.content .portfolio .body .section .itemcontainer {
-	background: grey;
+
+/*Item containers and items*/
+.content .portfolio .region .itemcontainer {
 	position: relative;
-	height: 150px;
 	margin: 0% 1% 1% 0%;
 	float: left;
 	overflow: hidden;
 }
+.content .portfolio .region .itemcontainer .item {
+	background: black;
+	position: relative;
+	height: 200px;
+	margin: 0% 1% 1% 0%;
+	float: left;
+
+	cursor: pointer;
+	overflow: hidden;
+}
+.content .portfolio .region .itemcontainer .item .background {
+	left: 0;
+	top: 0;
+	height: 100%;
+	min-width: 300px;
+
+	background-size: cover;
+
+	transition: opacity 0.25s, transform 0.25s;
+}
+.content .portfolio .region .itemcontainer .item h2 {
+	margin:  0;
+	max-width: 300px;
+	padding: 0;
+	margin: 0;
+
+	text-align: center;
+	color: white;
+
+	opacity: 0;
+
+	transform: translate(0, -200%);		/* Move the text up so its in the background*/
+}
+/* Mouse Over of the portfolio items */
+.content .portfolio .region .itemcontainer .item:hover .background {
+	opacity: 0.25;
+
+	transform: scale(1.3, 1.3);
+}
+.content .portfolio .region .itemcontainer .item:hover h2 {
+	opacity: 1;
+}
 
 /* Portfolio footer */
 .content .portfolio .footer {
-	width: 100%;
-	padding: 40px;
-	background: grey;
-	color: White;
-	text-align: center;
 	float: left;
-	position: relative;
-	bottom: 0px;
+	width: 100%;
+	padding: 5% 5% 5% 0%;
+	margin: 0;
+
+	text-align: center;
+	color: White;
+	background: black;
 }
 .content .portfolio .footer a {
 	text-decoration-style: none;
@@ -128,14 +175,25 @@ body {
 
 /* Resolution Resizing */
 @media(max-width: 900px) {
-	.banner { position: relative; width: 100%; height: 250px; }
-	.content { position: relative; width: 100%; }
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 150px; }
+	.content {
+		position: relative;
+		width: 100%; }
 }
 @media(max-width: 600px) {
-	.banner .information img { display: none; }
-	.banner .information .about  { width: 100%; }
+	.banner .information img {
+		display: none; }
+	.banner .information .about  {
+		width: 100%; }
 }
 @media(max-width: 1200px) and (min-width: 900px) {
-	.banner .information img { display: none; }
-	.banner .information .about  { width: 100%; }
+	.banner .information img {
+		display: none;
+	}
+	.banner .information .about  {
+		width: 100%;
+	}
 }
