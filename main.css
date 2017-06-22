@@ -11,6 +11,7 @@ body {
 
 
 /* Class Selectors */
+/* Banner (Left hand side) */
 .banner {
     position: fixed;
     background-color: black;
@@ -62,9 +63,53 @@ body {
     height: 64px;
 }
 
+/* Portfolio content (Right hand side)*/
 .content {
-
+	position: relative;
+	width: 75%;
+	min-height: 100%;
+	float: right;
+	overflow-x: hidden;
+	overflow: visible;
 }
+.content .portfolio {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	float: left;
+	overflow-y: visible;
+}
+.content .portfolio .section {
+	width: 100%;
+	padding: 0px 40px 60px 40px;
+	box-sizing: border-box;
+	float: left;
+}
+.content .portfolio .section h1 {
+	color: black;
+}
+.content .portfolio .section p {
+	width: 100%;
+	color: black;
+	margin: 0px 0px 16px 0px;
+	float: left;
+}
+.content .portfolio .footer {
+	width: 100%;
+	padding: 40px;
+	background: grey;
+	color: White;
+	text-align: center;
+	float: left;
+	position: relative;
+	bottom: 0px;
+}
+.content .portfolio .footer a {
+	text-decoration-style: none;
+	color: white;
+}
+
 
 /* ID Selectors */
 
