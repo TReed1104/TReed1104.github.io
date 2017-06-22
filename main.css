@@ -102,14 +102,14 @@ body {
 	color: black;
 }
 
-/*Item containers and items*/
-.content .portfolio .region .itemcontainer {
+/* Portfolio example container and work examples */
+.content .portfolio .region .examples {
 	position: relative;
 	margin: 0% 1% 1% 0%;
 	float: left;
 	overflow: hidden;
 }
-.content .portfolio .region .itemcontainer .item {
+.content .portfolio .region .examples .item {
 	background: black;
 	position: relative;
 	height: 200px;
@@ -119,7 +119,7 @@ body {
 	cursor: pointer;
 	overflow: hidden;
 }
-.content .portfolio .region .itemcontainer .item .background {
+.content .portfolio .region .examples .item .background {
 	left: 0;
 	top: 0;
 	height: 100%;
@@ -129,7 +129,7 @@ body {
 
 	transition: opacity 0.2s, transform 0.2s;
 }
-.content .portfolio .region .itemcontainer .item h2 {
+.content .portfolio .region .examples .item h2 {
 	max-width: 300px;
 	padding-bottom: 10px;
 	margin: 0;
@@ -142,7 +142,7 @@ body {
 
 	transition: opacity 0.2s, transform 0.2s;
 }
-.content .portfolio .region .itemcontainer .item h3 {
+.content .portfolio .region .examples .item h3 {
 	max-width: 300px;
 	padding: 0;
 	margin: 0;
@@ -154,16 +154,16 @@ body {
 
 	transition: opacity 0.2s, transform 0.2s;
 }
-/* Mouse Over of the portfolio items */
-.content .portfolio .region .itemcontainer .item:hover .background {
+/* Mouse Over of the portfolio examples */
+.content .portfolio .region .examples .item:hover .background {
 	opacity: 0.30;
 	transform: scale(1.25, 1.25);
 }
-.content .portfolio .region .itemcontainer .item:hover h2 {
+.content .portfolio .region .examples .item:hover h2 {
 	opacity: 1;
 	transform: translate(0, -120px);
 }
-.content .portfolio .region .itemcontainer .item:hover h3 {
+.content .portfolio .region .examples .item:hover h3 {
 	opacity: 1;
 	transform: translate(0, -120px);
 }
