@@ -80,21 +80,34 @@ body {
 	float: left;
 	overflow-y: visible;
 }
-.content .portfolio .section {
+.content .portfolio .body {
+	min-height: 100%;
+}
+.content .portfolio .body .section {
 	width: 100%;
 	padding: 0px 40px 60px 40px;
 	box-sizing: border-box;
 	float: left;
 }
-.content .portfolio .section h1 {
+.content .portfolio .body .section h1 {
 	color: black;
 }
-.content .portfolio .section p {
+.content .portfolio .body .section p {
 	width: 100%;
 	color: black;
 	margin: 0px 0px 16px 0px;
 	float: left;
 }
+.content .portfolio .body .section .itemcontainer {
+	background: grey;
+	position: relative;
+	height: 150px;
+	margin: 0% 1% 1% 0%;
+	float: left;
+	overflow: hidden;
+}
+
+/* Portfolio footer */
 .content .portfolio .footer {
 	width: 100%;
 	padding: 40px;
