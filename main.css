@@ -129,7 +129,7 @@ body {
 
 	background-size: cover;
 
-	transition: opacity 0.25s, transform 0.25s;
+	transition: opacity 0.2s, transform 0.2s;
 }
 .content .portfolio .region .itemcontainer .item h2 {
 	max-width: 300px;
@@ -139,16 +139,16 @@ body {
 
 	opacity: 0;
 
-	transform: translate(0, -70px);		/* Move the text up so its in the background*/
+	transition: opacity 0.2s, transform 0.2s;
 }
 /* Mouse Over of the portfolio items */
 .content .portfolio .region .itemcontainer .item:hover .background {
-	opacity: 0.25;
-
-	transform: scale(1.3, 1.3);
+	opacity: 0.30;
+	transform: scale(1.25, 1.25);
 }
 .content .portfolio .region .itemcontainer .item:hover h2 {
 	opacity: 1;
+	transform: translate(0, -120px);
 }
 
 /* Portfolio footer */
