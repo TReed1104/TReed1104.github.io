@@ -132,17 +132,14 @@ body {
 	transition: opacity 0.25s, transform 0.25s;
 }
 .content .portfolio .region .itemcontainer .item h2 {
-	margin:  0;
 	max-width: 300px;
-	padding: 0;
-	margin: 0;
 
 	text-align: center;
 	color: white;
 
 	opacity: 0;
 
-	transform: translate(0, -200%);		/* Move the text up so its in the background*/
+	transform: translate(0, -70px);		/* Move the text up so its in the background*/
 }
 /* Mouse Over of the portfolio items */
 .content .portfolio .region .itemcontainer .item:hover .background {
