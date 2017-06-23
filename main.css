@@ -56,13 +56,17 @@ body {
 }
 
 .banner .socials {
+	position: absolute;
+	bottom: 0px;
+	margin: 0;
+	padding: 0;
     width: auto;
     height: auto;
-	background-color: white;
 }
-.banner .socials a {
-    width: 64px;
-    height: 64px;
+.banner .socials .link {
+	float: left;
+	width: 64px;
+	height: 64px;
 }
 
 /* Portfolio content (Right hand side)*/
