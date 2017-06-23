@@ -87,18 +87,30 @@ body {
 .content .portfolio .region {
 	float: left;
 	width: 100%;
-	padding: 0px 40px 60px 40px;
+	padding: 30px;
 
 	box-sizing: border-box;
 }
 .content .portfolio .region h1 {
+	padding: 0;
+	margin: 0;
+
 	color: black;
+	font-size: 32px;
+}
+.content .portfolio .region h2 {
+	padding: 0;
+	margin: 0;
+
+	color: black;
+	font-size: 22px;
 }
 .content .portfolio .region p {
 	float: left;
 	width: 100%;
 	margin: 0px 0px 16px 0px;
-
+	padding: 0px 0px 20px 0px;
+	margin: 0;
 	color: black;
 }
 
@@ -131,7 +143,7 @@ body {
 }
 .content .portfolio .region .examples .item h2 {
 	max-width: 300px;
-	padding-bottom: 10px;
+	padding: 0px 0px 10px 0px;
 	margin: 0;
 
 	text-align: center;
@@ -168,11 +180,11 @@ body {
 	transform: translate(0, -120px);
 }
 
-/* Portfolio skillset container and skills */
-.content .portfolio .region .skillset {
+.content .portfolio .region .education {
 
 }
-.content .portfolio .region .skillset .skill {
+
+.content .portfolio .region .experience {
 
 }
 
@@ -207,16 +219,20 @@ body {
 	.banner {
 		position: relative;
 		width: 100%;
-		height: 150px; }
+		height: 150px;
+	}
 	.content {
 		position: relative;
-		width: 100%; }
+		width: 100%;
+	}
 }
-@media(max-width: 600px) {
+@media(max-width: 900px) {
 	.banner .information img {
-		display: none; }
+		display: none;
+	}
 	.banner .information .about  {
-		width: 100%; }
+		width: 100%;
+	}
 }
 @media(max-width: 1200px) and (min-width: 900px) {
 	.banner .information img {
