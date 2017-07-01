@@ -67,6 +67,7 @@ body {
 	float: left;
 	width: 64px;
 	height: 64px;
+	background-size: cover;
 }
 
 /* Portfolio content (Right hand side)*/
