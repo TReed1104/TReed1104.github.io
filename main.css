@@ -194,14 +194,6 @@ body {
 	transform: translate(0, -120px);
 }
 
-.content .portfolio .region .education {
-
-}
-
-.content .portfolio .region .experience {
-
-}
-
 /* Portfolio footer */
 .content .portfolio .footer {
 	float: left;
@@ -227,6 +219,30 @@ body {
 
 
 /* ID Selectors */
+#banner {
+
+}
+#content {
+	
+}
+#information {
+
+}
+#socials #github {
+
+}
+#socials #twitter {
+
+}
+#experience {
+
+}
+#education {
+
+}
+#footer {
+
+}
 
 /* Resolution Resizing */
 @media(max-width: 900px) {
