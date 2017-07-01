@@ -70,6 +70,11 @@ body {
 	height: 64px;
 	background-size: cover;
 }
+.banner .socials .icon a {
+	display: block;
+    width: 100%;
+	height: 100%;
+}
 
 /* Portfolio content (Right hand side)*/
 .content {
